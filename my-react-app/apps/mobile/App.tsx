@@ -13,20 +13,23 @@ import { AntDesign, Ionicons, Entypo } from '@expo/vector-icons';
 import PlaylistScreen from "./screen/PlaylistScreen";
 
 
+import Navigation from "./navigation"
+
 const App = () => {
   const Stack = createStackNavigator();
 
 
 
   return (
-    <ApplicationProvider {...eva} theme={eva.light}>
-      <NavigationContainer>
+    <ApplicationProvider {...eva} theme={eva.dark}>
+      {/* <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Welcome" component={WelcomeComponent}></Stack.Screen>
           <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
           <Stack.Screen name="Playlist" component={PlaylistScreen}></Stack.Screen>
         </Stack.Navigator>
-      </NavigationContainer>
+      </NavigationContainer> */}
+      <Navigation />
     </ApplicationProvider>
   );
 };

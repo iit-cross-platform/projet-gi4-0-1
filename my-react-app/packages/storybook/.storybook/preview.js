@@ -3,7 +3,7 @@ import { ApplicationProvider } from '@ui-kitten/components';
 
 export const decorators = [
   (Story) => (
-    <ApplicationProvider {...eva} theme={eva.light}>
+    <ApplicationProvider {...eva} theme={eva.dark}>
       <Story />
     </ApplicationProvider>
   ),
